@@ -1,0 +1,13 @@
+@Component({
+	selector: 'inventory-app', 
+	directives: [ProductsList], 
+	template: `
+		<div class="inventory-app">
+    	<products-list
+      		[productList]="products" <!-- this.products is injected into 
+      		producList constructor -->
+      	/>
+      	<button (click)="increase()">Increase</button>
+      	<!-- click event will execute this.increase() -->
+	</div>
+` })

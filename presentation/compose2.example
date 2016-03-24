@@ -1,0 +1,4 @@
+<input [ngModel]="product.text" (ngModelChange)="product.text=$event"></input>
+
+<!-- OR  -->
+<input [(ngModel)]="product.text"></input>

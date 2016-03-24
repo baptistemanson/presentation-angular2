@@ -1,0 +1,19 @@
+@Component({
+	selector: 'inventory-app', // can use now <inventory-app />
+	template: `
+	 <div class="inventory-app">
+	 	{{ name }}
+	 </div>
+`
+})
+
+
+class InventoryApp {
+	constructor( public name: string) {
+		this.name = name;
+	}
+}
+
+bootstrap(InventoryApp);
+
+

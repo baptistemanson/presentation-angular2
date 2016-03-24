@@ -1,0 +1,4 @@
+<!-- other example -->
+<ul>
+	<li *ngFor="#item of productList" *ngIf="item.isVisible()">
+</ul>
